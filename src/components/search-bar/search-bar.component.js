@@ -8,18 +8,15 @@ class SearchBar extends Component {
         super(props);
         this.state = {
             searchTerm: "",
-            filteredSearchTerms: [],
             offset: 0,
             isFocused: true, // we autofocus the input
         }
+        this.setCurrentSearchTerm = this.setCurrentSearchTerm.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.filterPreviousSearches = this.filterPreviousSearches.bind(this);
         this.hideDropdown = this.hideDropdown.bind(this);
-        this.showDropdown = this.showDropdown.bind(this);
     }
 
     handleSubmit(event) {
-        // this.filterPreviousSearches(event);
         event.preventDefault();
         if (this.props.lastSearchedTerm !== this.state.searchTerm) {
             this.setState({
@@ -33,18 +30,14 @@ class SearchBar extends Component {
             });
         }
         this.props.onSearch(this.state.searchTerm);
+        this.hideDropdown();
     }
 
-    filterPreviousSearches(event) {
-        const currentTerm = event.target.value.toLowerCase();
-        const filteredSearchTerms = [].concat(
-            this.props.previousSearchTerms.filter(previousSearchTerm => {
-                return previousSearchTerm.indexOf(currentTerm) >= 0;
-            })
-        );
+    setCurrentSearchTerm(event) {
         this.setState({
-            searchTerm: currentTerm,
-            filteredSearchTerms
+            ...this.state,
+            isFocused: true,
+            searchTerm: event.target.value.toLowerCase(),
         })
     }
 
@@ -64,40 +57,29 @@ class SearchBar extends Component {
         });
     }
 
-    showDropdown() {
-        this.setState({
-            ...this.state,
-            isFocused: true,
-        });
-    }
-
     render() {
         return <div className="search-bar">
             <a className="pronounciation"
                 href="http://fizzystack.web.fc2.com/gif.html"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
             >
                 How to pronounce "gif"
             </a>
             <form onSubmit={this.handleSubmit}>
                 <input autoFocus
-                    onBlur={this.hideDropdown}
-                    onFocus={this.showDropdown}
                     className="search-bar__input"
                     placeholder="Search Giphy!"
-                    onChange={this.filterPreviousSearches}
+                    onChange={this.setCurrentSearchTerm}
                     type="text"
                     value={this.state.searchTerm}
                 />
             </form>
             <div id="dropdown-attach">
-                {
-                    (this.props.previousSearchTerms.length > 0 && this.state.isFocused)
+                { (this.props.previousSearchTerms.length > 0 && this.state.isFocused)
                     ? <div className="dropdown-container">
                         <SearchDropdown />
                     </div>
-                    : ""
-                }
+                    : "" }
             </div>
         </div>
     }

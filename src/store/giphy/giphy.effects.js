@@ -1,5 +1,4 @@
-import * as contentActions from './giphy-content/giphy-content.actions';
-import * as searchActions from './giphy-search/giphy-search.actions';
+import * as actions from './giphy-content/giphy-content.actions';
 
 // Constants for setting number of items to retrieve per endpoint
 const numberOfTrendingItemsToRetrieve = 18;
@@ -27,7 +26,7 @@ export const getTrendingGifsEffect = () => (dispatch) => {
         return response.json();
     })
     .then(data => {
-        dispatch(contentActions.SetTrendingGifsAction(data.data));
+        dispatch(actions.SetTrendingGifsAction(data.data));
     })
     .catch(error => {
         console.log('error: ', error);
@@ -43,6 +42,6 @@ export const getSearchResultsEffect = () => (dispatch, getState) => {
     fetch(urlForCurrentSearchRequest).then(response => {
         return response.json();
     }).then(data => {
-        dispatch(contentActions.SetSearchResultsAction(data.data));
+        dispatch(actions.SetSearchResultsAction(data.data));
     });
 }

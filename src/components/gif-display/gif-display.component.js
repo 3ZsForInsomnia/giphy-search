@@ -5,8 +5,7 @@ const GifDisplay = ({gif}) => {
         <div className="gif-display__gif">
         { (gif)
             ? <img src={gif.images.fixed_width_small.url}/>
-            : ""
-        }
+            : "" }
         </div>
     </div>
 }

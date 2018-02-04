@@ -1,6 +1,7 @@
 import { connect} from "react-redux";
 import * as effects from "./../store/giphy/giphy.effects";
-import * as actions from "./../store/giphy/giphy-search/giphy-search.actions";
+import * as searchActions from "./../store/giphy/giphy-search/giphy-search.actions";
+import * as contentActions from "./../store/giphy/giphy-content/giphy-content.actions";
 import SearchResults from "./../components/search-results/search-results.component";
 
 const mapStateToProps = state => {
@@ -14,8 +15,11 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         loadMoreGifs: () => {
-            dispatch(actions.IncrementSearchOffsetAction());
+            dispatch(searchActions.IncrementSearchOffsetAction());
             dispatch(effects.getSearchResultsEffect());
+        },
+        onGifSelect: gif => {
+            dispatch(contentActions.SetSelectedGifAction(gif));
         }
     };
 }

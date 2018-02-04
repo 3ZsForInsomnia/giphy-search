@@ -26,7 +26,11 @@ class TrendingGifs extends Component {
                 ? <div className="trending__grid">
                     {
                         this.props.trendingGifs.map((gif, index) => {
-                            return <div className="trending__item" key={index}>
+                            return <div
+                                className="trending__item"
+                                key={index}
+                                onClick={() => this.props.onGifSelect(gif)}
+                            >
                                 <GifDisplay gif={gif} />
                             </div>
                         })

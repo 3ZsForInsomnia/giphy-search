@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import TrendingGifs from "./containers/trending-gifs.container";
 import SearchBar from "./containers/search-bar.container";
-import SearchResults from "./containers/search-results.container";
-import SpecificGif from "./containers/specific-gif.container";
+import ContentSection from "./containers/content-section.container";
 
 class App extends Component {
   render() {
@@ -12,8 +10,7 @@ class App extends Component {
       <div className="App">
         <TrendingGifs />
         <SearchBar />
-        {/* <SearchResults /> */}
-        <SpecificGif />
+        <ContentSection />
       </div>
     );
   }

@@ -10,8 +10,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        searchAgain: (searchTerm) => {
-            console.log('searched: ', searchTerm);
+        searchAgain: searchTerm => {
             dispatch(StartANewSearchAction(searchTerm));
         }
     }

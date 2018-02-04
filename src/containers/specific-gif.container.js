@@ -1,10 +1,10 @@
 import { connect} from "react-redux";
-import { UnsetSelectedGifAction, UnsetSearchResultsAction } from "./../store/giphy/giphy-content/giphy-content.actions";
+import { UnsetSelectedGifAction } from "./../store/giphy/giphy-content/giphy-content.actions";
 import SpecificGif from "./../components/specific-gif/specific-gif.component";
 
 const mapStateToProps = state => {
     return {
-        selectedGif: state.giphyContent.trendingGifs[0],
+        selectedGif: state.giphyContent.selectedGif,
     }
 }
 

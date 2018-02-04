@@ -10,7 +10,8 @@ const SearchDropdown = ({previousSearchTerms, searchAgain}) => {
                     previousSearchTerms.map((search, index) => {
                         return <li key={index}
                             className="search-dropdown__search"
-                            onClick={() => searchAgain(search)}>
+                            onClick={() => searchAgain(search)}
+                        >
                             <span>{search}</span>
                         </li>
                     })

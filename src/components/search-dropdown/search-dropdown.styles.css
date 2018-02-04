@@ -25,3 +25,7 @@
     color: #333;
     cursor: pointer;
 }
+
+.search-dropdown__search:hover {
+    background-color: #ccc;
+}

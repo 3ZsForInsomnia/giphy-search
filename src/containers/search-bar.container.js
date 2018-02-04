@@ -6,7 +6,8 @@ const mapStateToProps = state => {
     return {
         previousSearchTerms: state.giphySearch.previousSearchTerms,
         // "lastSearchedTerm is named differently than normal  to emphasize
-        // difference between current search text and last search request made
+        // difference between the component's current search text
+        // and last search request made
         lastSearchedTerm: state.giphySearch.searchTerm,
     }
 }

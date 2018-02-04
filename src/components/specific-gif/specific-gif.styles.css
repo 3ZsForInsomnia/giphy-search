@@ -5,20 +5,32 @@
 }
 
 .specific-gif__exit {
-    font-size: 1.5em;
+    font-size: 1.3em;
     float: right;
-    padding: 20px;
+    margin: -70px -20px 0 0;
+    padding: 4px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 6px;
+    color: #333;
+    background-color: #ccc;
 }
 
 .specific-gif__image {
     padding: 20px;
     border: 1px solid grey;
     border-right: none;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .specific-gif__data {
     padding: 20px;
     border: 1px solid grey;
-    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
