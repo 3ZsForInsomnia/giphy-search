@@ -8,8 +8,6 @@ On top of Redux, I imported Redux-Thunk, which is probably my favorite library f
 
 For HTTP requests, I used Fetch due to the minimal requirements and ability to avoid importing another library.
 
-I also tried out styled-components for the first time, as it seemed like a straightforward and exciting new tool to work with, and this project simple enough to experiment with it here.
-
 ## Structure of the project ##
 
 I used a "non-standard" folder structure for this project compared to typical React practices as I prefer this structure, in both React and Angular 2+, where I picked it up from.
