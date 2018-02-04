@@ -1,0 +1,24 @@
+.specific-gif {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.specific-gif__exit {
+    font-size: 1.5em;
+    float: right;
+    padding: 20px;
+}
+
+.specific-gif__image {
+    padding: 20px;
+    border: 1px solid grey;
+    border-right: none;
+    border-radius: 6px;
+}
+
+.specific-gif__data {
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}

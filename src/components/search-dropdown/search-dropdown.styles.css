@@ -1,0 +1,27 @@
+.search-dropdown {
+    max-width: 40vw;
+    min-width: 30vw;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+.search-dropdown__list {
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 0 10px;
+    list-style-type: none;
+    margin-top: 0;
+    border-top: none;
+}
+
+.search-dropdown__search {
+    text-align: center;
+    font-size: 2em;
+    padding: 6px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #333;
+    cursor: pointer;
+}
