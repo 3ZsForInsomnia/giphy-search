@@ -1,5 +1,7 @@
 # About this project #
 
+This app was created with Create React App, so running it only requires pulling it down from [github](https://github.com/3ZsForInsomnia/giphy-search), running ```npm install``` followed by ```npm start```.
+
 ## Technologies used ##
 
 The primary workhorse library for this app (outside of React itself) is Redux. I am a big fan of the functional reactive approach used in Redux (and NgRx for Angular 2+), given the simplicity and amount of "mental workload" pulled out of the components.
