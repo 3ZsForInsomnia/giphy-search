@@ -1,6 +1,6 @@
-import React from "react";
-import "./specific-gif.styles.css";
-import GifData from "./../gif-data/gif-data.component";
+import React from 'react';
+import './specific-gif.styles.css';
+import GifData from './../gif-data/gif-data.component';
 
 const SpecificGif = ({selectedGif, returnToSearch}) => {
     return <div className="specific-gif">

@@ -1,8 +1,8 @@
-export const setSearchResults = "[Giphy Content] Set Search Results";
-export const unsetSearchResults = "[Giphy Content] Unset Search Results";
-export const setSelectedGif = "[Giphy Content] Set Selected Gif";
-export const unsetSelectedGif = "[Giphy Content] Unset Selected Gif";
-export const setTrendingGifs = "[Giphy Content] Set Trending Gifs";
+export const setSearchResults = '[Giphy Content] Set Search Results';
+export const unsetSearchResults = '[Giphy Content] Unset Search Results';
+export const setSelectedGif = '[Giphy Content] Set Selected Gif';
+export const unsetSelectedGif = '[Giphy Content] Unset Selected Gif';
+export const setTrendingGifs = '[Giphy Content] Set Trending Gifs';
 
 export const SetSearchResultsAction = (searchResults) => {
     return {

@@ -1,6 +1,6 @@
-import { connect} from "react-redux";
-import { UnsetSelectedGifAction } from "./../store/giphy/giphy-content/giphy-content.actions";
-import SpecificGif from "./../components/specific-gif/specific-gif.component";
+import { connect} from 'react-redux';
+import { UnsetSelectedGifAction } from './../store/giphy/giphy-content/giphy-content.actions';
+import SpecificGif from './../components/specific-gif/specific-gif.component';
 
 const mapStateToProps = state => {
     return {

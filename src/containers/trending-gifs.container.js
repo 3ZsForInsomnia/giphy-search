@@ -1,6 +1,6 @@
-import { connect} from "react-redux";
-import * as actions from "./../store/giphy/giphy-content/giphy-content.actions";
-import TrendingGifs from "./../components/trending-gifs/trending-gifs.component";
+import { connect} from 'react-redux';
+import * as actions from './../store/giphy/giphy-content/giphy-content.actions';
+import TrendingGifs from './../components/trending-gifs/trending-gifs.component';
 
 const mapStateToProps = state => {
     return {

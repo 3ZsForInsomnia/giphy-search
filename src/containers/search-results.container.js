@@ -1,8 +1,8 @@
-import { connect} from "react-redux";
-import * as effects from "./../store/giphy/giphy.effects";
-import * as searchActions from "./../store/giphy/giphy-search/giphy-search.actions";
-import * as contentActions from "./../store/giphy/giphy-content/giphy-content.actions";
-import SearchResults from "./../components/search-results/search-results.component";
+import { connect} from 'react-redux';
+import * as effects from './../store/giphy/giphy.effects';
+import * as searchActions from './../store/giphy/giphy-search/giphy-search.actions';
+import * as contentActions from './../store/giphy/giphy-content/giphy-content.actions';
+import SearchResults from './../components/search-results/search-results.component';
 
 const mapStateToProps = state => {
     return {

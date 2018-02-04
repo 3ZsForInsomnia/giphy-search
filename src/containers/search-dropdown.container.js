@@ -1,6 +1,6 @@
-import { connect} from "react-redux";
-import { StartANewSearchAction } from "./../store/giphy/giphy-combined.actions";
-import SearchDropdown from "./../components/search-dropdown/search-dropdown.component";
+import { connect} from 'react-redux';
+import { StartANewSearchAction } from './../store/giphy/giphy-combined.actions';
+import SearchDropdown from './../components/search-dropdown/search-dropdown.component';
 
 const mapStateToProps = state => {
     return {

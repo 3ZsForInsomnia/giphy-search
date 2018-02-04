@@ -1,5 +1,5 @@
-import React from "react";
-import "./gif-data.styles.css";
+import React from 'react';
+import './gif-data.styles.css';
 
 const GifData = ({gif}) => {
     return <div className="gif-data">

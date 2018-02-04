@@ -1,6 +1,6 @@
-export const setSearchTerm = "[Giphy Search] Set Search Term";
-export const setSearchOffset = "[Giphy Search] Set Search Offset";
-export const updatePreviousSearches = "[Giphy Search] Update Previous Searches";
+export const setSearchTerm = '[Giphy Search] Set Search Term';
+export const setSearchOffset = '[Giphy Search] Set Search Offset';
+export const updatePreviousSearches = '[Giphy Search] Update Previous Searches';
 
 export const SetSearchTermAction = (searchTerm) => {
     return {

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Proptypes from "prop-types";
-import "./search-results.styles.css";
-import GifDisplay from "./../gif-display/gif-display.component";
-import { hasUserScrolledToBottom } from "./../../services/scroll-utilities.service";
+import React, { Component } from 'react';
+import Proptypes from 'prop-types';
+import './search-results.styles.css';
+import GifDisplay from './../gif-display/gif-display.component';
+import { hasUserScrolledToBottom } from './../../services/scroll-utilities.service';
 
 class SearchResults extends Component {
     constructor(props) {
@@ -17,11 +17,11 @@ class SearchResults extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener("scroll", this.onScroll);
+        window.addEventListener('scroll', this.onScroll);
     }
 
     componentWillUnmount() {
-        window.removeEventListener("scroll", this.onScroll);
+        window.removeEventListener('scroll', this.onScroll);
     }
 
     render() {

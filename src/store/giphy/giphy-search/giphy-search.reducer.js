@@ -1,7 +1,7 @@
-import * as actions from "./giphy-search.actions";
+import * as actions from './giphy-search.actions';
 
 const initialState = {
-    searchTerm: "",
+    searchTerm: '',
     previousSearchTerms: [],
     offset: 0,
 }

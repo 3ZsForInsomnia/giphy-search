@@ -1,11 +1,11 @@
-import { connect} from "react-redux";
-import { StartANewSearchAction } from "./../store/giphy/giphy-combined.actions";
-import SearchBar from "./../components/search-bar/search-bar.component";
+import { connect} from 'react-redux';
+import { StartANewSearchAction } from './../store/giphy/giphy-combined.actions';
+import SearchBar from './../components/search-bar/search-bar.component';
 
 const mapStateToProps = state => {
     return {
         previousSearchTerms: state.giphySearch.previousSearchTerms,
-        // "lastSearchedTerm is named differently than normal  to emphasize
+        // lastSearchedTerm is named differently than normal  to emphasize
         // difference between the component's current search text
         // and last search request made
         lastSearchedTerm: state.giphySearch.searchTerm,

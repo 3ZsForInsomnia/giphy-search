@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import Proptypes from "prop-types";
-import "./search-bar.styles.css";
-import SearchDropdown from "./../../containers/search-dropdown.container";
+import React, { Component } from 'react';
+import Proptypes from 'prop-types';
+import './search-bar.styles.css';
+import SearchDropdown from './../../containers/search-dropdown.container';
 
 class SearchBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            searchTerm: "",
+            searchTerm: '',
             offset: 0,
             isFocused: true, // we autofocus the input
         }
