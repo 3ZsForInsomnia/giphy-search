@@ -2,6 +2,8 @@
 
 This app was created with Create React App, so running it only requires pulling it down from [github](https://github.com/3ZsForInsomnia/giphy-search), running ```npm install``` followed by ```npm start```.
 
+Also note that all the gifs are clickable. This will open a separate view that replaces the search results with a view of the gif in its original size as well as details about the gif, such as ID, when it was uploaded to Giphy, and more.
+
 ## Technologies used ##
 
 The primary workhorse library for this app (outside of React itself) is Redux. I am a big fan of the functional reactive approach used in Redux (and NgRx for Angular 2+), given the simplicity and amount of "mental workload" pulled out of the components.
